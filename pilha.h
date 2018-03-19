@@ -9,7 +9,7 @@ vazia()
 */
 
 #ifndef _PILHA_H
-#define _PILHA_H
+#define _PILHA_H 
 #define MAX 10
 
 typedef struct pilha Pilha;
@@ -25,5 +25,9 @@ int pilha_cheia (const Pilha *);
 int pilha_vazia (const Pilha *);
 
 int tamanho_pilha (const Pilha *);
+
+void mostra_pilha (const Pilha *);
+
+void inverte_pilha (Pilha **);
 
 #endif
