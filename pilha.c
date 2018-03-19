@@ -2,8 +2,17 @@
 #include <stdlib.h>
 #include "pilha.h"
 
-struct pilha {
+struct pilha 
+{
 	int v[MAX];
-	int top;
-} Pilha;
+	int topo;
+};
 
+
+Pilha * cria_pilha () 
+{
+	Pilha * p = (Pilha *) malloc (sizeof(Pilha));
+	if(p)
+		p->topo = 0;
+	return p;
+}
